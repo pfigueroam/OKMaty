@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js -->
+    <title>Calculadora OK MATY</title>
+  </head>
+  <body>
+    <section>
+      <!--for demo wrap-->
+      <div class="container">
+        <h1>Calculadora de precios</h1>
+      </div>
+
+      <!-- <div class="inputs">
+
+        <input type="text" name="nombreproducto" id="nproducto" placeholder="Ingrese el nombre producto" />
+        <input type="number" name="precioproducto" id="nprecio" placeholder="Ingrese el precio producto" required/>
+
+        </div> -->
+
+      <div class="form">
+        <input
+          type="text"
+          id="nproducto"
+          placeholder="Ingrese el nombre producto"
+        />
+        <input
+          type="number"
+          id="nprecio"
+          placeholder="Ingrese el precio producto"
+          required
+        />
+        <button onclick="extraerDato()">Calcular</button>
+      </div>
+
+      <div class="tbl-header">
+        <table cellpadding="0" cellspacing="0" border="0">
+          <thead>
+            <tr>
+              <th>Porcentaje</th>
+              <th>Producto</th>
+              <th>Ganacia</th>
+              <th>Precio Venta</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+      <div class="tbl-content">
+        <table cellpadding="0" cellspacing="0" border="0">
+          <tbody>
+            <tr>
+              <td>20%</td>
+              <td id="nproducto1">NOMBRE PRODUCTO</td>
+              <td id="ganancia"></td>
+              <td id="precioventa1"></td>
+            </tr>
+            <tr>
+              <td>30%</td>
+              <td id="nproducto2">NOMBRE PRODUCTO</td>
+              <td id="ganancia2"></td>
+              <td id="precioventa2"></td>
+            </tr>
+            <tr>
+              <td>40%</td>
+              <td id="nproducto3">NOMBRE PRODUCTO</td>
+              <td id="ganancia3"></td>
+              <td id="precioventa3"></td>
+            </tr>
+            <tr>
+              <td>50%</td>
+              <td id="nproducto4">NOMBRE PRODUCTO</td>
+              <td id="ganancia4"></td>
+              <td id="precioventa4"></td>
+            </tr>
+            <tr>
+              <td>60%</td>
+              <td id="nproducto5">NOMBRE PRODUCTO</td>
+              <td id="ganancia5"></td>
+              <td id="precioventa5"></td>
+            </tr>
+            <tr>
+              <td>70%</td>
+              <td id="nproducto6">NOMBRE PRODUCTO</td>
+              <td id="ganancia6"></td>
+              <td id="precioventa6"></td>
+            </tr>
+            <tr>
+              <td>80%</td>
+              <td id="nproducto7">NOMBRE PRODUCTO</td>
+              <td id="ganancia7"></td>
+              <td id="precioventa7"></td>
+            </tr>
+            <tr>
+              <td>90%</td>
+              <td id="nproducto8">NOMBRE PRODUCTO</td>
+              <td id="ganancia8"></td>
+              <td id="precioventa8"></td>
+            </tr>
+            <tr>
+              <td>100%</td>
+              <td id="nproducto9">NOMBRE PRODUCTO</td>
+              <td id="ganancia9"></td>
+              <td id="precioventa9"></td>
+            </tr>
+          </tbody>
+        </table>
+        <form>
+          <button class="limpiar">limpiar</button>
+        </form>
+      </div>
+    </section>
+
+    <script src="assets/JS/main.js"></script>
+  </body>
+</html>
